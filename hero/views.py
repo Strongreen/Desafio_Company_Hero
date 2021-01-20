@@ -91,6 +91,7 @@ class Filtercompany(APIView):
                 companied['razao_social'] = company.razao_social
                 companied['nome_fantasia'] = company.nome_fantasia
                 companied['telefone_comercial'] = company.telefone_comercial
+                companied['inscricao_municipal_estadual'] = company.inscricao_municipal_estadual
                 companied['cnpj'] = company.cnpj
                 companied['endereco'] = company.endereco
                 companied['email'] = company.email
