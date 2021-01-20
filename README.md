@@ -83,7 +83,7 @@ http://127.0.0.1:8000/employeer/:username
 
 ### Diagrama da estrutura do BD
 
- ![]()
+ ![](https://github.com/Strongreen/Desafio_Company_Hero/blob/main/diagrama.png)
 
 
 
