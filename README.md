@@ -184,7 +184,10 @@ Especificação dos campos:
 
  ![](https://github.com/Strongreen/Desafio_Company_Hero/blob/main/diagrama.png)
 
+### Método de organização e planejamento utilizado para realizar o desafio
 
+**Trello**
+https://trello.com/invite/b/C4tMnmN2/9de9dc86b0e1e9287be67310a676ce80/company-hero-python
 
 #### Link da proposta
 
