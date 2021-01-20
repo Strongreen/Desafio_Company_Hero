@@ -16,7 +16,7 @@ Obs: A descrição foi baseada para configurar via postman
 http://127.0.0.1:8000/company/
 ```
 
-### GET de uma empresa específica com os funcionarios que trabalham nessa empresa
+### GET de uma empresa específica com os funcionários que trabalham nessa empresa
 
 **Params: cnpj**
 
@@ -45,12 +45,12 @@ http://127.0.0.1:8000/company/
 
 ## Employeer
 
-### GET de todas os funcionarios
+### GET de todos os funcionários
 ```
 http://127.0.0.1:8000/employeer/
 ```
 
-### GET de uma funcionarios específico com as empresas que ele trabalha
+### GET de um funcionário específico com as empresas que ele trabalha
 
 **Params: username**
 
