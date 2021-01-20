@@ -1,10 +1,10 @@
-<h1> Desafio Company Hero </h1>
-<h5>Desafio processo seletivo da Company Hero </h5>
-<h5>Desenvolvedor Python Jr. </h5>
-<h5>Criação de uma API em Django Rest Framework </h5>
+# Desafio Company Hero
+#### Desafio processo seletivo da Company Hero
+#### Desenvolvedor Python Jr.
+#### Criação de uma API em Django Rest Framework
 
 
-<h3> Descrição de como utilizar a API. </h3>
+# Descrição de como utilizar a API. </h3>
 
 Obs: A descrição foi baseada para configurar via postman
 
@@ -74,3 +74,19 @@ http://127.0.0.1:8000/employeer/:username
     "company": "id da company - este campo deve ser um int"
 }
 ```
+
+## Stacks utilizadas no projeto
+- Python 3.8.5
+- Django 3.1.5
+- Django Rest Framework
+- Postgres
+
+### Diagrama da estrutura do BD
+
+ ![]()
+
+
+
+#### Link da proposta
+
+https://www.notion.so/Teste-Python-Company-Hero-210200be44044560b450d6e80e27431b
