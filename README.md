@@ -59,6 +59,14 @@ Exemplo do response do GET passando o parametro cnpj:
 
 ```
 
+```
+Caso a API não encontre nenhuma empresa com o CNPJ:
+{
+    "error": "Empresa não encontrado!"
+}
+
+```
+
 
 
 ### POST 
@@ -142,6 +150,12 @@ Exemplo do response do GET passando como parametro o username:
 }
 ```
 
+```
+Caso a API não encontre nenhum funcionário com parametro username informado:
+{
+    "error": "Funcionario não encontrado!"
+}
+```
 
 ### POST 
 
