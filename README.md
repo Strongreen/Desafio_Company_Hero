@@ -28,6 +28,10 @@ http://127.0.0.1:8000/company/:cnpj
 
 ```
 http://127.0.0.1:8000/company/
+
+Header
+Content-Type: application/json
+
 ```
 
 **Body**:
@@ -36,6 +40,7 @@ http://127.0.0.1:8000/company/
     "razao_social": "Razão social da empresa",
     "nome_fantasia": "nome fantasia da empresa",
     "telefone_comercial": "telefone da empresa",
+    "inscricao_municipal_estadual": "123456789",
     "cnpj": "CNPJ da empresa",
     "endereco": "Endereço completo comercial da empresa",
     "email": "email da empresa"
@@ -62,6 +67,8 @@ http://127.0.0.1:8000/employeer/:username
 
 ```
 http://127.0.0.1:8000/employeer/:username
+Header
+Content-Type: application/json
 ```
 
 **Body**:
