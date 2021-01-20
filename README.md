@@ -4,19 +4,19 @@ Desenvolvedor Python Jr.
 Criação de uma API em Django Rest Framework
 
 
-### Descrição de como utilizar a API.
+# Descrição de como utilizar a API.
 
 Obs: A descrição foi baseada para configurar via postman
 
 
 ## Company
 
-# GET de todas as empresas
+### GET de todas as empresas
 ```
 http://127.0.0.1:8000/company/
 ```
 
-# GET de uma empresa específica com os funcionarios que trabalham nessa empresa
+### GET de uma empresa específica com os funcionarios que trabalham nessa empresa
 
 **Params: cnpj**
 
@@ -24,7 +24,7 @@ http://127.0.0.1:8000/company/
 http://127.0.0.1:8000/company/:cnpj
 ```
 
-# POST 
+### POST 
 
 ```
 http://127.0.0.1:8000/company/
@@ -45,12 +45,12 @@ http://127.0.0.1:8000/company/
 
 ## Employeer
 
-# GET de todas os funcionarios
+### GET de todas os funcionarios
 ```
 http://127.0.0.1:8000/employeer/
 ```
 
-# GET de uma funcionarios específico com as empresas que ele trabalha
+### GET de uma funcionarios específico com as empresas que ele trabalha
 
 **Params: username**
 
@@ -58,7 +58,7 @@ http://127.0.0.1:8000/employeer/
 http://127.0.0.1:8000/employeer/:username
 ```
 
-# POST 
+### POST 
 
 ```
 http://127.0.0.1:8000/employeer/:username
