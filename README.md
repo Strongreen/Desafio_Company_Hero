@@ -40,13 +40,26 @@ Content-Type: application/json
     "razao_social": "Razão social da empresa",
     "nome_fantasia": "nome fantasia da empresa",
     "telefone_comercial": "telefone da empresa",
-    "inscricao_municipal_estadual": "123456789",
+    "inscricao_municipal_estadual": "incricao municipal ou inscricao estadual",
     "cnpj": "CNPJ da empresa",
     "endereco": "Endereço completo comercial da empresa",
     "email": "email da empresa"
 }
 ```
 
+
+```
+Especificação dos campos:
+{
+    "razao_social": string,
+    "nome_fantasia": string,
+    "telefone_comercial": string,
+    "inscricao_municipal_estadual": string,
+    "cnpj": string,
+    "endereco": string,
+    "email": string
+}
+```
 
 ## Employeer
 
@@ -78,9 +91,21 @@ Content-Type: application/json
     "username": "user name do funcionario",
     "cargo": "cargo do funcionario",
     "cpf": "cpf do funcionario",
-    "company": "id da company - este campo deve ser um int"
+    "company": "id da company"
 }
 ```
+
+```
+Especificação dos campos:
+{
+    "name": string,
+    "username": string,
+    "cargo": string,
+    "cpf": string,
+    "company": int
+}
+```
+
 
 ## Stacks utilizadas no projeto
 - Python 3.8.5
