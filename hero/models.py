@@ -5,7 +5,7 @@ class Company(models.Model):
     razao_social = models.CharField(max_length=50)
     nome_fantasia = models.CharField(max_length=50)
     telefone_comercial = models.CharField(max_length=50)
-    inscricao_municipal_Estadual: models.CharField(max_length=50)
+    inscricao_municipal_estadual= models.CharField(max_length=50)
     cnpj = models.CharField(max_length=40)
     endereco = models.CharField(max_length=150)
     email = models.CharField(max_length=50)
