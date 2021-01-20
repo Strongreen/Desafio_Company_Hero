@@ -16,6 +16,24 @@ Obs: A descrição foi baseada para configurar via postman
 http://127.0.0.1:8000/company/
 ```
 
+```
+Exemplo do response do GET:
+[
+    {
+        "id": 1,
+        "razao_social": "Company Hero",
+        "nome_fantasia": "Company Hero",
+        "telefone_comercial": "11 2233 4422",
+        "inscricao_municipal_estadual": "123456789",
+        "cnpj": "20240272000176",
+        "endereco": "Rua da sede",
+        "email": "people@companyhero.com"
+    }
+]
+
+```
+
+
 ### GET de uma empresa específica com os funcionários que trabalham nessa empresa
 
 **Params: cnpj**
@@ -23,6 +41,25 @@ http://127.0.0.1:8000/company/
 ```
 http://127.0.0.1:8000/company/:cnpj
 ```
+
+```
+Exemplo do response do GET passando o parametro cnpj:
+{
+    "razao_social": "Company Hero",
+    "nome_fantasia": "Company Hero",
+    "telefone_comercial": "11 2233 4422",
+    "inscricao_municipal_estadual": "123456789",
+    "cnpj": "20240272000176",
+    "endereco": "Rua da sede",
+    "email": "people@companyhero.com",
+    "employeers": [
+        "Hérika"
+    ]
+}
+
+```
+
+
 
 ### POST 
 
@@ -67,6 +104,22 @@ Especificação dos campos:
 ```
 http://127.0.0.1:8000/employeer/
 ```
+```
+Exemplo do response do GET:
+[
+    {
+        "id": 1,
+        "name": "Hérika",
+        "username": "strongreen",
+        "cargo": "dev python jr",
+        "cpf": "0803030040",
+        "company": 1
+    }
+]
+```
+
+
+
 
 ### GET de um funcionário específico com as empresas que ele trabalha
 
@@ -75,6 +128,20 @@ http://127.0.0.1:8000/employeer/
 ```
 http://127.0.0.1:8000/employeer/:username
 ```
+
+```
+Exemplo do response do GET passando como parametro o username:
+{
+    "name": "Hérika",
+    "cpf": "0803030040",
+    "cargo": "dev python jr",
+    "username": "strongreen",
+    "companies": [
+        "Company Hero"
+    ]
+}
+```
+
 
 ### POST 
 
