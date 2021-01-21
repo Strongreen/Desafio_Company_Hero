@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 import dj_database_url
-import django_heroku
 import os
 
 
@@ -33,7 +32,6 @@ EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get('DEBUG') == True
 
 ALLOWED_HOSTS = ['0.0.0.0', 'localhost', '127.0.0.1', 'desafiocompanyhero.herokuapp.com']
 
@@ -81,8 +79,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'company_hero.wsgi.application'
-
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
 # Database
@@ -140,12 +136,13 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 #location where django collect all static files
-STATIC_ROOT = os.path.join(BASE_DIR,'staticfile')
+STATIC_ROOT = os.path.join(BASE_DIR,'static')
 # location where you will store your static files
 STATICFILES_DIRS = [os.path.join(BASE_DIR,'company_hero/static')]
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 MEDIA_URL = '/media/'
 
 
-django_heroku.settings(locals())
