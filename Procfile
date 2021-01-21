@@ -1,1 +1,1 @@
-web: gunicorn company_hero.wsgi
+web: gunicorn company_hero.wsgi --log-file -
