@@ -13,7 +13,7 @@ Obs: A descrição foi baseada para configurar via postman
 
 ### GET de todas as empresas
 ```
-http://127.0.0.1:8000/company/
+https://desafiocompanyhero.herokuapp.com/company/
 ```
 
 ```
@@ -39,7 +39,7 @@ Exemplo do response do GET:
 **Params: cnpj**
 
 ```
-http://127.0.0.1:8000/company/:cnpj
+https://desafiocompanyhero.herokuapp.com/company/:cnpj
 ```
 
 ```
@@ -72,7 +72,7 @@ Caso a API não encontre nenhuma empresa com o CNPJ:
 ### POST 
 
 ```
-http://127.0.0.1:8000/company/
+https://desafiocompanyhero.herokuapp.com/company/
 
 Header
 Content-Type: application/json
@@ -110,7 +110,7 @@ Especificação dos campos:
 
 ### GET de todos os funcionários
 ```
-http://127.0.0.1:8000/employeer/
+https://desafiocompanyhero.herokuapp.com/employeer/
 ```
 ```
 Exemplo do response do GET:
@@ -134,7 +134,7 @@ Exemplo do response do GET:
 **Params: username**
 
 ```
-http://127.0.0.1:8000/employeer/:username
+https://desafiocompanyhero.herokuapp.com/employeer/:username
 ```
 
 ```
@@ -160,7 +160,7 @@ Caso a API não encontre nenhum funcionário com parametro username informado:
 ### POST 
 
 ```
-http://127.0.0.1:8000/employeer/:username
+https://desafiocompanyhero.herokuapp.com/employeer/
 Header
 Content-Type: application/json
 ```
@@ -189,10 +189,11 @@ Especificação dos campos:
 
 
 ## Stacks utilizadas no projeto
-- Python 3.8.5
+- Python 3.8.7
 - Django 3.1.5
 - Django Rest Framework
 - Postgres
+- Heroku
 
 ### Diagrama da estrutura do BD
 
