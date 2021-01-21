@@ -5,10 +5,10 @@ class Company(models.Model):
     razao_social = models.CharField(max_length=50)
     nome_fantasia = models.CharField(max_length=50)
     telefone_comercial = models.CharField(max_length=50)
-    inscricao_municipal_estadual = models.CharField(max_length=50)
-    cnpj = models.CharField(max_length=40)
+    inscricao_municipal_estadual = models.CharField(max_length=50, unique=True)
+    cnpj = models.CharField(max_length=40, unique=True)
     endereco = models.CharField(max_length=150)
-    email = models.CharField(max_length=50)
+    email = models.CharField(max_length=50, unique=True)
 
     def __str__(self):
         return self.razao_social
@@ -18,7 +18,7 @@ class Employeer(models.Model):
     name = models.CharField(max_length=50)
     username = models.CharField(max_length=50)
     cargo = models.CharField(max_length=50)
-    cpf = models.CharField(max_length=50)
+    cpf = models.CharField(max_length=50, unique=True)
     company = models.ForeignKey(
         Company, on_delete=models.CASCADE, related_name='company')
 
