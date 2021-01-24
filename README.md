@@ -198,6 +198,11 @@ Especificação dos campos:
 ### Diagrama da estrutura do BD
 
  ![](https://github.com/Strongreen/Desafio_Company_Hero/blob/main/diagrama.png)
+ 
+ 
+### Collection configurada do Postman
+
+Link: https://github.com/Strongreen/Desafio_Company_Hero/blob/main/Company%20Hero.postman_collection.json
 
 ### Método de organização e planejamento utilizado para realizar o desafio
 
