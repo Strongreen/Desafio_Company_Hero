@@ -1,0 +1,185 @@
+{
+	"id": "449a5773-d5c8-d144-6b2e-5edbb0b6cbb2",
+	"name": "Company Hero",
+	"description": "",
+	"order": [
+		"06f07734-f4a9-c250-842a-f6b279eeba92",
+		"5230df59-6afe-58c4-832f-0b73245865e0",
+		"8de308d9-dc55-724c-547d-f112b9ae9e1f",
+		"1b44e18e-fe6f-c9d0-90a3-73817a276fa2",
+		"6d7c0316-36ea-bf00-6028-7cd1dabcc9e0",
+		"3025e744-be82-9186-c8b9-98c5d8861a68"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1611152181306,
+	"owner": "5662943",
+	"public": false,
+	"requests": [
+		{
+			"id": "06f07734-f4a9-c250-842a-f6b279eeba92",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8000/employeer/:username",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {
+				"username": ""
+			},
+			"pathVariableData": [
+				{
+					"key": "username",
+					"value": ""
+				}
+			],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1611152209167,
+			"name": "http://127.0.0.1:8000/employeer/:username",
+			"description": "",
+			"collectionId": "449a5773-d5c8-d144-6b2e-5edbb0b6cbb2",
+			"responses": [],
+			"rawModeData": "{\n    \"name\": \"Lipe \",\n    \"cargo\": \"Gestou de TI\",\n    \"cpf\": \"01203054201\",\n    \"company\": \"Engennier\",\n    \"email\": \"teste@teste.com\"\n}"
+		},
+		{
+			"id": "1b44e18e-fe6f-c9d0-90a3-73817a276fa2",
+			"headers": "",
+			"headerData": [],
+			"url": "http://127.0.0.1:8000/company/",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "449a5773-d5c8-d144-6b2e-5edbb0b6cbb2",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://127.0.0.1:8000/company/",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1611152448513,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "3025e744-be82-9186-c8b9-98c5d8861a68",
+			"headers": "",
+			"headerData": [],
+			"url": "http://127.0.0.1:8000/company/",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1611164833868,
+			"name": "http://127.0.0.1:8000/company/",
+			"description": "",
+			"collectionId": "449a5773-d5c8-d144-6b2e-5edbb0b6cbb2",
+			"responses": [],
+			"rawModeData": "{\n    \"razao_social\": \"Razão social da empresa\",\n    \"nome_fantasia\": \"nome fantasia da empresa\",\n    \"telefone_comercial\": \"telefone da empresa\",\n    \"cnpj\": \"CNPJ da empresa\",\n    \"inscricao_municipal_estadual\": \"inscricao municipal e ou inscricao estadual\"\n    \"endereco\": \"Endereço completo comercial da empresa\",\n    \"email\": \"email da empresa\"\n}"
+		},
+		{
+			"id": "5230df59-6afe-58c4-832f-0b73245865e0",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8000/employeer/",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1611152395615,
+			"name": "http://127.0.0.1:8000/employeer/",
+			"description": "",
+			"collectionId": "449a5773-d5c8-d144-6b2e-5edbb0b6cbb2",
+			"responses": [],
+			"rawModeData": "{\n    \"name\": \"nome do funcionario\",\n    \"username\": \"user name do funcionario\",\n    \"cargo\": \"cargo do funcionario\",\n    \"cpf\": \"cpf do funcionario\",\n    \"company\": \"id da company - este campo deve ser um int\"\n}"
+		},
+		{
+			"id": "6d7c0316-36ea-bf00-6028-7cd1dabcc9e0",
+			"headers": "",
+			"headerData": [],
+			"url": "http://127.0.0.1:8000/company/:cnpj",
+			"queryParams": [],
+			"pathVariables": {
+				"cnpj": ""
+			},
+			"pathVariableData": [
+				{
+					"key": "cnpj",
+					"value": ""
+				}
+			],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "449a5773-d5c8-d144-6b2e-5edbb0b6cbb2",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://127.0.0.1:8000/company/:cnpj",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1611152484343,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "8de308d9-dc55-724c-547d-f112b9ae9e1f",
+			"headers": "",
+			"headerData": [],
+			"url": "http://127.0.0.1:8000/employeer/",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "449a5773-d5c8-d144-6b2e-5edbb0b6cbb2",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://127.0.0.1:8000/employeer/",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1611152423709,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
