@@ -140,9 +140,9 @@ https://desafiocompanyhero.herokuapp.com/employeer/:username
 ```
 Exemplo do response do GET passando como parametro o username:
 {
-    "name": "Hérika",
-    "cpf": "0803030040",
-    "cargo": "dev python jr",
+    "name": "Hendrick",
+    "cpf": "30030030030",
+    "cargo": "Dev Pleno e Pentester",
     "username": "strongreen",
     "companies": [
         "Company Hero"
