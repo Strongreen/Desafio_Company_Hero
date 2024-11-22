@@ -117,10 +117,10 @@ Exemplo do response do GET:
 [
     {
         "id": 1,
-        "name": "Hérika",
+        "name": "Hendrick",
         "username": "strongreen",
-        "cargo": "dev python jr",
-        "cpf": "0803030040",
+        "cargo": "Dev Pleno e Pentester",
+        "cpf": "30030030030",
         "company": 1
     }
 ]
